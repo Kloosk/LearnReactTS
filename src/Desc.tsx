@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 interface Props {
     text: string;
@@ -8,7 +8,7 @@ interface Props {
 const Desc: React.FC<Props> = ({text,num}) => {
     return(
         <>
-            {Array(num).fill(<p>Description of my great TS app</p>)}
+            {Array(num).fill(<p>{text}</p>)}
         </>
     );
 };
